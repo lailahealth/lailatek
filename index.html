@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laila Tek — Visibilidade que transforma</title>
-  <meta name="description" content="Inteligência social para transformar políticas públicas. Transformamos dados em decisões que cuidam de pessoas e territórios." />
+  <meta name="description"
+    content="Inteligência social para transformar políticas públicas. Transformamos dados em decisões que cuidam de pessoas e territórios." />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+    rel="stylesheet" />
 
   <script>
     tailwind.config = {
@@ -17,26 +21,26 @@
         extend: {
           colors: {
             laila: {
-              red:          '#7e2720',
-              'red-mid':    '#98524d',
-              'red-light':  '#cba9a6',
-              'red-pale':   '#e5d4d2',
-              blue:         '#7e96a5',
-              'blue-mid':   '#aebfc9',
+              red: '#7e2720',
+              'red-mid': '#98524d',
+              'red-light': '#cba9a6',
+              'red-pale': '#e5d4d2',
+              blue: '#7e96a5',
+              'blue-mid': '#aebfc9',
               'blue-light': '#ced9df',
-              'blue-pale':  '#dfe5e9',
-              warm:         '#c6b69f',
-              'warm-mid':   '#d1c5b2',
+              'blue-pale': '#dfe5e9',
+              warm: '#c6b69f',
+              'warm-mid': '#d1c5b2',
               'warm-light': '#ddd3c5',
-              'warm-pale':  '#f4f0ec',
-              cream:        '#f6edde',
-              'cream-mid':  '#faf4eb',
-              'cream-light':'#fbf8f2',
+              'warm-pale': '#f4f0ec',
+              cream: '#f6edde',
+              'cream-mid': '#faf4eb',
+              'cream-light': '#fbf8f2',
               'cream-pale': '#fdfbf8',
             }
           },
           fontFamily: {
-            exo:    ['"Exo 2"', 'sans-serif'],
+            exo: ['"Exo 2"', 'sans-serif'],
             script: ['"Dancing Script"', 'cursive'],
           },
         }
@@ -45,11 +49,28 @@
   </script>
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Exo 2', sans-serif; background-color: #fdfbf8; color: #1f2937; overflow-x: hidden; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    .logo-script { font-family: 'Dancing Script', cursive; }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Exo 2', sans-serif;
+      background-color: #fdfbf8;
+      color: #1f2937;
+      overflow-x: hidden;
+    }
+
+    .logo-script {
+      font-family: 'Dancing Script', cursive;
+    }
 
     /* ── Reveal on scroll ── */
     .reveal {
@@ -57,25 +78,59 @@
       transform: translateY(28px);
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
+
     .reveal.visible {
       opacity: 1;
       transform: translateY(0);
     }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
-    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    .reveal-delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    .reveal-delay-4 {
+      transition-delay: 0.4s;
+    }
 
     /* ── Card hover lift ── */
-    .card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-    .card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(126,39,32,0.12); }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(126, 39, 32, 0.12);
+    }
 
     /* ── Hero gradient bg ── */
-    .hero-bg { background: linear-gradient(145deg, #7e2720 0%, #98524d 100%); }
+    .hero-bg {
+      background: linear-gradient(145deg, #7e2720 0%, #98524d 100%);
+    }
 
     /* ── Fingerprint float ── */
-    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
-    .fp-float { animation: float 7s ease-in-out infinite; }
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(-18px)
+      }
+    }
+
+    .fp-float {
+      animation: float 7s ease-in-out infinite;
+    }
 
     /* ── Wavy lines pattern ── */
     .wave-lines {
@@ -90,8 +145,21 @@
     }
 
     /* ── Animated pulse for badge ── */
-    @keyframes pulsedot { 0%,100%{opacity:1} 50%{opacity:0.4} }
-    .pulsedot { animation: pulsedot 2s ease-in-out infinite; }
+    @keyframes pulsedot {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: 0.4
+      }
+    }
+
+    .pulsedot {
+      animation: pulsedot 2s ease-in-out infinite;
+    }
 
     /* ── Form inputs ── */
     .form-input {
@@ -106,15 +174,37 @@
       outline: none;
       background: white;
     }
-    .form-input:focus { border-color: #7e2720; box-shadow: 0 0 0 3px rgba(126,39,32,0.08); }
-    .form-input::placeholder { color: #9ca3af; }
+
+    .form-input:focus {
+      border-color: #7e2720;
+      box-shadow: 0 0 0 3px rgba(126, 39, 32, 0.08);
+    }
+
+    .form-input::placeholder {
+      color: #9ca3af;
+    }
 
     /* ── Scroll indicator ── */
-    @keyframes bounce-y { 0%,100%{transform:translateY(0)} 50%{transform:translateY(6px)} }
-    .bounce-y { animation: bounce-y 1.6s ease-in-out infinite; }
+    @keyframes bounce-y {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(6px)
+      }
+    }
+
+    .bounce-y {
+      animation: bounce-y 1.6s ease-in-out infinite;
+    }
 
     /* ── Sticky nav shadow ── */
-    .nav-scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .nav-scrolled {
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    }
   </style>
 </head>
 
@@ -123,27 +213,38 @@
   <!-- ═══════════════════════════════════════════
        NAVBAR
   ════════════════════════════════════════════ -->
-  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/96 backdrop-blur-md border-b border-laila-red-pale transition-all duration-300">
+  <nav id="navbar"
+    class="fixed top-0 left-0 right-0 z-50 bg-white/96 backdrop-blur-md border-b border-laila-red-pale transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
       <!-- Logo -->
       <a href="#" class="flex items-center gap-3 group">
-        <svg class="w-9 h-9 text-laila-blue flex-shrink-0 transition-transform group-hover:scale-110 duration-300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-          <path d="M50 14C67 14 80 27 80 50C80 65 73 77 62 83M38 83C27 77 20 65 20 50C20 27 33 14 50 14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-          <path d="M50 22C63 22 72 33 72 50C72 62 66 72 57 76M43 76C34 72 28 62 28 50C28 33 37 22 50 22" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-          <path d="M50 30C59 30 66 38 66 48C66 55 62 60 56 63C52 65 48 64 45 61C42 58 42 53 45 50C48 47 52 47 55 49C57 51 57 54 55 57" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <svg class="w-9 h-9 text-laila-blue flex-shrink-0 transition-transform group-hover:scale-110 duration-300"
+          viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+          <path d="M50 14C67 14 80 27 80 50C80 65 73 77 62 83M38 83C27 77 20 65 20 50C20 27 33 14 50 14"
+            stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+          <path d="M50 22C63 22 72 33 72 50C72 62 66 72 57 76M43 76C34 72 28 62 28 50C28 33 37 22 50 22"
+            stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+          <path
+            d="M50 30C59 30 66 38 66 48C66 55 62 60 56 63C52 65 48 64 45 61C42 58 42 53 45 50C48 47 52 47 55 49C57 51 57 54 55 57"
+            stroke="currentColor" stroke-width="3" stroke-linecap="round" />
         </svg>
         <span class="logo-script text-3xl text-laila-red font-bold leading-none">Laila Tek</span>
       </a>
 
       <!-- Desktop nav links -->
       <div class="hidden md:flex items-center gap-7">
-        <a href="#sobre"    class="text-xs font-700 font-bold text-gray-500 hover:text-laila-red transition-colors uppercase tracking-widest">Sobre</a>
-        <a href="#solucoes" class="text-xs font-bold text-gray-500 hover:text-laila-red transition-colors uppercase tracking-widest">Soluções</a>
-        <a href="#impacto"  class="text-xs font-bold text-gray-500 hover:text-laila-red transition-colors uppercase tracking-widest">Impacto</a>
-        <a href="#publico"  class="text-xs font-bold text-gray-500 hover:text-laila-red transition-colors uppercase tracking-widest">Público</a>
-        <a href="#contato"  class="bg-laila-red text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-laila-red-mid transition-colors shadow-md shadow-laila-red/20">
+        <a href="#sobre"
+          class="text-xs font-700 font-bold text-gray-500 hover:text-laila-red transition-colors uppercase tracking-widest">Sobre</a>
+        <a href="#solucoes"
+          class="text-xs font-bold text-gray-500 hover:text-laila-red transition-colors uppercase tracking-widest">Soluções</a>
+        <a href="#impacto"
+          class="text-xs font-bold text-gray-500 hover:text-laila-red transition-colors uppercase tracking-widest">Impacto</a>
+        <a href="#publico"
+          class="text-xs font-bold text-gray-500 hover:text-laila-red transition-colors uppercase tracking-widest">Público</a>
+        <a href="#contato"
+          class="bg-laila-red text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-laila-red-mid transition-colors shadow-md shadow-laila-red/20">
           Fale Conosco
         </a>
       </div>
@@ -151,18 +252,23 @@
       <!-- Mobile hamburger -->
       <button id="menu-btn" class="md:hidden text-laila-red p-1" aria-label="Abrir menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
 
     <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-laila-red-pale px-6 py-5 space-y-1">
-      <a href="#sobre"    class="block py-2.5 text-sm font-semibold text-gray-700 hover:text-laila-red border-b border-gray-100">Sobre</a>
-      <a href="#solucoes" class="block py-2.5 text-sm font-semibold text-gray-700 hover:text-laila-red border-b border-gray-100">Soluções</a>
-      <a href="#impacto"  class="block py-2.5 text-sm font-semibold text-gray-700 hover:text-laila-red border-b border-gray-100">Impacto</a>
-      <a href="#publico"  class="block py-2.5 text-sm font-semibold text-gray-700 hover:text-laila-red border-b border-gray-100">Público</a>
-      <a href="#contato"  class="block mt-3 bg-laila-red text-white py-3 rounded-full text-sm font-bold text-center">Fale Conosco</a>
+      <a href="#sobre"
+        class="block py-2.5 text-sm font-semibold text-gray-700 hover:text-laila-red border-b border-gray-100">Sobre</a>
+      <a href="#solucoes"
+        class="block py-2.5 text-sm font-semibold text-gray-700 hover:text-laila-red border-b border-gray-100">Soluções</a>
+      <a href="#impacto"
+        class="block py-2.5 text-sm font-semibold text-gray-700 hover:text-laila-red border-b border-gray-100">Impacto</a>
+      <a href="#publico"
+        class="block py-2.5 text-sm font-semibold text-gray-700 hover:text-laila-red border-b border-gray-100">Público</a>
+      <a href="#contato" class="block mt-3 bg-laila-red text-white py-3 rounded-full text-sm font-bold text-center">Fale
+        Conosco</a>
     </div>
   </nav>
 
@@ -176,7 +282,9 @@
     <div class="wave-lines-red absolute inset-0 pointer-events-none"></div>
 
     <!-- Large circle glow -->
-    <div class="absolute -right-40 -top-40 w-[700px] h-[700px] rounded-full bg-laila-blue/10 blur-3xl pointer-events-none"></div>
+    <div
+      class="absolute -right-40 -top-40 w-[700px] h-[700px] rounded-full bg-laila-blue/10 blur-3xl pointer-events-none">
+    </div>
 
     <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center py-20 relative z-10">
 
@@ -184,20 +292,23 @@
       <div class="text-white">
 
         <!-- Badge -->
-        <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-8 backdrop-blur-sm">
+        <div
+          class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-8 backdrop-blur-sm">
           <span class="pulsedot w-2 h-2 bg-laila-blue-light rounded-full flex-shrink-0"></span>
-          <span class="text-xs font-semibold text-laila-blue-light tracking-wide">Tecnologia Social · Políticas Públicas · 2026</span>
+          <span class="text-xs font-semibold text-laila-blue-light tracking-wide">Tecnologia Social · Políticas Públicas
+            · 2026</span>
         </div>
 
         <h1 class="text-5xl lg:text-[3.6rem] font-black leading-[1.08] mb-6">
-          Tecnologia que<br/>
+          Tecnologia que<br />
           <span class="relative inline-block">
             enxerga
-            <svg class="absolute -bottom-1 left-0 w-full h-3" viewBox="0 0 220 12" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="110" cy="6" rx="108" ry="5" stroke="white" stroke-width="1.5"/>
+            <svg class="absolute -bottom-1 left-0 w-full h-3" viewBox="0 0 220 12" preserveAspectRatio="none"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="110" cy="6" rx="108" ry="5" stroke="white" stroke-width="1.5" />
             </svg>
           </span>
-          além dos<br/>números.
+          além dos<br />números.
         </h1>
 
         <p class="text-lg text-laila-red-pale leading-relaxed mb-8 max-w-lg">
@@ -207,10 +318,12 @@
         </p>
 
         <div class="flex flex-wrap gap-4 mb-14">
-          <a href="#solucoes" class="bg-white text-laila-red px-8 py-4 rounded-full font-bold text-sm hover:bg-laila-cream transition-colors shadow-xl shadow-black/20">
+          <a href="#solucoes"
+            class="bg-white text-laila-red px-8 py-4 rounded-full font-bold text-sm hover:bg-laila-cream transition-colors shadow-xl shadow-black/20">
             Conheça nossas soluções
           </a>
-          <a href="#sobre" class="border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-sm hover:bg-white/10 transition-colors">
+          <a href="#sobre"
+            class="border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-sm hover:bg-white/10 transition-colors">
             Nossa história →
           </a>
         </div>
@@ -256,16 +369,22 @@
           <div class="absolute inset-0 scale-110 rounded-full bg-laila-blue/15 blur-2xl"></div>
           <div class="absolute inset-0 scale-125 rounded-full bg-laila-red-mid/10 blur-3xl"></div>
 
-          <svg class="fp-float w-72 h-72 lg:w-[420px] lg:h-[420px] text-laila-blue-light relative z-10" style="opacity:0.85"
-               viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="fp-float w-72 h-72 lg:w-[420px] lg:h-[420px] text-laila-blue-light relative z-10"
+            style="opacity:0.85" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <!-- Outer ring -->
-            <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
             <!-- Arc 1 -->
-            <path d="M50 13C67.5 13 81 26.5 81 50C81 65.5 73.5 77.5 62 83.5M38 83.5C26.5 77.5 19 65.5 19 50C19 26.5 32.5 13 50 13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <path
+              d="M50 13C67.5 13 81 26.5 81 50C81 65.5 73.5 77.5 62 83.5M38 83.5C26.5 77.5 19 65.5 19 50C19 26.5 32.5 13 50 13"
+              stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
             <!-- Arc 2 -->
-            <path d="M50 21.5C63.5 21.5 73 32 73 50C73 62 67 72 58 76.5M42 76.5C33 72 27 62 27 50C27 32 36.5 21.5 50 21.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <path
+              d="M50 21.5C63.5 21.5 73 32 73 50C73 62 67 72 58 76.5M42 76.5C33 72 27 62 27 50C27 32 36.5 21.5 50 21.5"
+              stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
             <!-- S-curve with inner spiral -->
-            <path d="M50 30C59.5 30 67 37.5 67 48C67 55.5 62.5 61 56.5 63.5C52.5 65.5 48.5 64 45.5 61C42.5 58 42.5 53 45.5 50C48.5 47 52.5 47 55.5 49.5C57.5 51.5 57.5 54.5 55 57" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <path
+              d="M50 30C59.5 30 67 37.5 67 48C67 55.5 62.5 61 56.5 63.5C52.5 65.5 48.5 64 45.5 61C42.5 58 42.5 53 45.5 50C48.5 47 52.5 47 55.5 49.5C57.5 51.5 57.5 54.5 55 57"
+              stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
           </svg>
         </div>
       </div>
@@ -275,33 +394,8 @@
     <div class="bounce-y absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50">
       <span class="text-[10px] uppercase tracking-[0.2em]">Role para baixo</span>
       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
       </svg>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════
-       STATS STRIP
-  ════════════════════════════════════════════ -->
-  <section class="bg-laila-blue py-14">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-      <div class="reveal">
-        <div class="text-4xl lg:text-5xl font-black mb-1">5.570</div>
-        <div class="text-laila-blue-pale text-xs font-semibold uppercase tracking-widest">municípios no Brasil</div>
-      </div>
-      <div class="reveal reveal-delay-1">
-        <div class="text-4xl lg:text-5xl font-black mb-1">SUS</div>
-        <div class="text-laila-blue-pale text-xs font-semibold uppercase tracking-widest">metas & repasses</div>
-      </div>
-      <div class="reveal reveal-delay-2">
-        <div class="text-4xl lg:text-5xl font-black mb-1">100%</div>
-        <div class="text-laila-blue-pale text-xs font-semibold uppercase tracking-widest">baseada em dados reais</div>
-      </div>
-      <div class="reveal reveal-delay-3">
-        <div class="text-4xl lg:text-5xl font-black mb-1">2026</div>
-        <div class="text-laila-blue-pale text-xs font-semibold uppercase tracking-widest">rebranding & expansão</div>
-      </div>
     </div>
   </section>
 
@@ -316,7 +410,7 @@
       <div class="text-center mb-16 reveal">
         <p class="text-laila-blue font-bold text-xs uppercase tracking-[0.2em] mb-4">Por trás do nome</p>
         <h2 class="text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-4">
-          <span class="text-laila-red">TEK</span> não é abreviação<br/>de tecnologia.
+          <span class="text-laila-red">TEK</span> não é repaginação<br />de tecnologia.
         </h2>
         <p class="text-xl text-gray-500 max-w-xl mx-auto">
           É mais próximo do humano. Cada letra carrega uma filosofia.
@@ -328,21 +422,26 @@
 
         <!-- T — Territory -->
         <div class="reveal bg-laila-red text-white p-10 lg:p-12 relative overflow-hidden">
-          <div class="absolute top-0 right-0 text-[160px] font-black leading-none text-white/5 select-none pointer-events-none translate-x-6 -translate-y-4">T</div>
+          <div
+            class="absolute top-0 right-0 text-[160px] font-black leading-none text-white/5 select-none pointer-events-none translate-x-6 -translate-y-4">
+            T</div>
           <div class="relative z-10">
             <span class="inline-block text-7xl font-black text-white/20 leading-none mb-4">T</span>
             <h3 class="text-2xl font-black text-white mb-1">Territory</h3>
             <div class="w-10 h-0.5 bg-laila-red-light mb-4"></div>
             <p class="text-laila-red-pale leading-relaxed text-sm">
-              O território não é só um mapa — é um organismo vivo. É onde as pessoas moram, adoecem, crescem e são invisibilizadas.
-              A Laila Tek parte sempre do <strong class="text-white">lugar</strong> como unidade de análise e de cuidado.
+              O território não é só um mapa — é um organismo vivo. É onde as pessoas moram, adoecem e crescem.
+              A Laila Tek parte sempre do <strong class="text-white">lugar</strong> como unidade de análise e de
+              cuidado.
             </p>
           </div>
         </div>
 
         <!-- E — Evidence -->
         <div class="reveal reveal-delay-1 bg-laila-blue text-white p-10 lg:p-12 relative overflow-hidden">
-          <div class="absolute top-0 right-0 text-[160px] font-black leading-none text-white/5 select-none pointer-events-none translate-x-6 -translate-y-4">E</div>
+          <div
+            class="absolute top-0 right-0 text-[160px] font-black leading-none text-white/5 select-none pointer-events-none translate-x-6 -translate-y-4">
+            E</div>
           <div class="relative z-10">
             <span class="inline-block text-7xl font-black text-white/20 leading-none mb-4">E</span>
             <h3 class="text-2xl font-black text-white mb-1">Evidence</h3>
@@ -350,20 +449,23 @@
             <p class="text-laila-blue-pale leading-relaxed text-sm">
               A evidência é a ponte entre o dado bruto e a decisão justa.
               Não usamos dados para impressionar — usamos para <strong class="text-white">provar</strong> o que existe,
-              revelar quem está sendo ignorado e fundamentar políticas que funcionam.
+              revelar o que e quem não está sendo visto, e fundamentar políticas que funcionam.
             </p>
           </div>
         </div>
 
         <!-- K — Knowledge -->
         <div class="reveal reveal-delay-2 bg-laila-warm text-gray-900 p-10 lg:p-12 relative overflow-hidden">
-          <div class="absolute top-0 right-0 text-[160px] font-black leading-none text-black/5 select-none pointer-events-none translate-x-6 -translate-y-4">K</div>
+          <div
+            class="absolute top-0 right-0 text-[160px] font-black leading-none text-black/5 select-none pointer-events-none translate-x-6 -translate-y-4">
+            K</div>
           <div class="relative z-10">
             <span class="inline-block text-7xl font-black text-black/15 leading-none mb-4">K</span>
             <h3 class="text-2xl font-black text-gray-900 mb-1">Knowledge</h3>
             <div class="w-10 h-0.5 bg-laila-red mb-4"></div>
             <p class="text-gray-700 leading-relaxed text-sm">
-              O conhecimento aqui não é só técnico — é <strong class="text-gray-900">humano, situado e transformador</strong>.
+              O conhecimento aqui não é só técnico — é <strong class="text-gray-900">humano, situado e
+                transformador</strong>.
               É o saber que vem da escuta dos territórios, da vivência das equipes e da tradução
               dos dados em ação concreta para quem mais precisa.
             </p>
@@ -373,14 +475,15 @@
 
       <!-- Bottom statement -->
       <div class="reveal text-center">
-        <div class="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-8 bg-white border border-laila-warm-light rounded-2xl px-10 py-6 shadow-sm">
+        <div
+          class="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-8 bg-white border border-laila-warm-light rounded-2xl px-10 py-6 shadow-sm">
           <p class="text-gray-500 text-sm leading-relaxed max-w-xs text-center sm:text-left">
             Enquanto <em>tech</em> remete a máquinas e sistemas,
           </p>
           <div class="hidden sm:block w-px h-10 bg-laila-warm-light"></div>
           <p class="text-gray-900 font-bold text-base text-center sm:text-left max-w-xs">
             <span class="text-laila-red">TEK</span> remete a território, evidência e conhecimento —
-            as três dimensões do cuidado humano com dados.
+            as três dimensões do cuidado humano da Laila TEK.
           </p>
         </div>
       </div>
@@ -393,27 +496,31 @@
   ════════════════════════════════════════════ -->
   <section id="sobre" class="py-28 bg-laila-cream-pale relative overflow-hidden wave-lines">
     <!-- Decorative large circle -->
-    <div class="absolute -right-32 -top-32 w-[500px] h-[500px] rounded-full border-2 border-laila-warm-light opacity-30 pointer-events-none"></div>
-    <div class="absolute -right-16 -top-16 w-[360px] h-[360px] rounded-full border-2 border-laila-warm-light opacity-20 pointer-events-none"></div>
+    <div
+      class="absolute -right-32 -top-32 w-[500px] h-[500px] rounded-full border-2 border-laila-warm-light opacity-30 pointer-events-none">
+    </div>
+    <div
+      class="absolute -right-16 -top-16 w-[360px] h-[360px] rounded-full border-2 border-laila-warm-light opacity-20 pointer-events-none">
+    </div>
 
     <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
 
       <!-- Left: copy -->
       <div class="reveal">
-        <div class="inline-block text-laila-red font-bold text-xs uppercase tracking-[0.2em] mb-5 border-b-2 border-laila-red pb-1">
+        <div
+          class="inline-block text-laila-red font-bold text-xs uppercase tracking-[0.2em] mb-5 border-b-2 border-laila-red pb-1">
           Nossa Origem
         </div>
         <h2 class="text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-7">
-          Uma história<br/>
-          <span class="text-laila-red">profundamente</span><br/>
+          Uma história<br />
+          <span class="text-laila-red">profundamente</span><br />
           humana.
         </h2>
         <div class="space-y-5 text-gray-600 text-lg leading-relaxed">
           <p>
             A <strong class="text-gray-900">Laila Tek</strong> nasceu do encontro entre tecnologia, cuidado e
             uma história que toca o coração. Seu nome homenageia <strong class="text-laila-red">Laila</strong>,
-            avó da fundadora — símbolo de acolhimento, sabedoria e força diante de estigmas
-            como o autismo e o preconceito.
+            avó da fundadora — símbolo de acolhimento, sabedoria e força diante de estigmas.
           </p>
           <p>
             Inspirada por essas vivências, a empresa surgiu com o propósito de
@@ -439,9 +546,11 @@
           <!-- Decorative fp in corner -->
           <div class="absolute bottom-0 right-0 w-52 h-52 opacity-10 translate-x-12 translate-y-12">
             <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-              <circle cx="50" cy="50" r="44" stroke="white" stroke-width="3"/>
-              <path d="M50 14C67 14 80 27 80 50C80 65 73 77 62 83M38 83C27 77 20 65 20 50C20 27 33 14 50 14" stroke="white" stroke-width="3"/>
-              <path d="M50 22C63 22 72 33 72 50C72 62 66 72 57 76M43 76C34 72 28 62 28 50C28 33 37 22 50 22" stroke="white" stroke-width="3"/>
+              <circle cx="50" cy="50" r="44" stroke="white" stroke-width="3" />
+              <path d="M50 14C67 14 80 27 80 50C80 65 73 77 62 83M38 83C27 77 20 65 20 50C20 27 33 14 50 14"
+                stroke="white" stroke-width="3" />
+              <path d="M50 22C63 22 72 33 72 50C72 62 66 72 57 76M43 76C34 72 28 62 28 50C28 33 37 22 50 22"
+                stroke="white" stroke-width="3" />
             </svg>
           </div>
 
@@ -450,35 +559,41 @@
             <li class="flex items-start gap-3">
               <span class="w-2 h-2 rounded-full bg-laila-blue-light mt-2 flex-shrink-0"></span>
               <p class="text-laila-red-pale leading-relaxed">
-                <strong class="text-white">Tecnologia social</strong> — empatia embasada em evidências e ciência de dados
+                <strong class="text-white">Tecnologia social</strong> — empatia embasada em evidências e ciência de
+                dados
               </p>
             </li>
             <li class="flex items-start gap-3">
               <span class="w-2 h-2 rounded-full bg-laila-blue-light mt-2 flex-shrink-0"></span>
               <p class="text-laila-red-pale leading-relaxed">
-                <strong class="text-white">Visibilidade para o invisível</strong> — pessoas e territórios negligenciados pelo sistema
+                <strong class="text-white">Visibilidade para o invisível</strong> — pessoas e territórios negligenciados
+                pelo sistema
               </p>
             </li>
             <li class="flex items-start gap-3">
               <span class="w-2 h-2 rounded-full bg-laila-blue-light mt-2 flex-shrink-0"></span>
               <p class="text-laila-red-pale leading-relaxed">
-                <strong class="text-white">Inovação humana</strong> — transformação pública como missão, não como produto
+                <strong class="text-white">Inovação humana</strong> — transformação pública como missão, não como
+                produto
               </p>
             </li>
             <li class="flex items-start gap-3">
               <span class="w-2 h-2 rounded-full bg-laila-blue-light mt-2 flex-shrink-0"></span>
               <p class="text-laila-red-pale leading-relaxed">
-                <strong class="text-white">Impacto real</strong> — melhoria de metas e repasses do SUS para municípios
+                <strong class="text-white">Impacto real</strong> — direcionamento para que políticas públicas
+                transformem vidas
               </p>
             </li>
           </ul>
         </div>
 
         <!-- Floating icon -->
-        <div class="absolute -top-6 -left-6 w-[72px] h-[72px] bg-laila-blue rounded-2xl flex items-center justify-center shadow-xl shadow-laila-blue/30">
+        <div
+          class="absolute -top-6 -left-6 w-[72px] h-[72px] bg-laila-blue rounded-2xl flex items-center justify-center shadow-xl shadow-laila-blue/30">
           <svg class="w-9 h-9 text-white" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="3"/>
-            <path d="M50 14C67 14 80 27 80 50C80 65 73 77 62 83M38 83C27 77 20 65 20 50C20 27 33 14 50 14" stroke="currentColor" stroke-width="3"/>
+            <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="3" />
+            <path d="M50 14C67 14 80 27 80 50C80 65 73 77 62 83M38 83C27 77 20 65 20 50C20 27 33 14 50 14"
+              stroke="currentColor" stroke-width="3" />
           </svg>
         </div>
       </div>
@@ -494,7 +609,7 @@
       <div class="text-center mb-16">
         <div class="text-laila-red font-bold text-xs uppercase tracking-[0.2em] mb-4 reveal">O Desafio</div>
         <h2 class="text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-6 reveal">
-          O problema que nenhum dado<br/>
+          O problema que nenhum dado<br />
           <span class="text-laila-red">consegue mostrar sozinho.</span>
         </h2>
         <p class="text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed reveal">
@@ -507,31 +622,37 @@
         <div class="card reveal bg-laila-cream rounded-2xl p-8 border border-laila-warm-light">
           <div class="w-12 h-12 bg-laila-red/10 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-laila-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
           </div>
           <h3 class="text-xl font-bold text-gray-900 mb-3">Dados fragmentados</h3>
-          <p class="text-gray-500 leading-relaxed text-sm">Informações dispersas em sistemas isolados que não se comunicam, impossibilitando uma visão real do território e da população.</p>
+          <p class="text-gray-500 leading-relaxed text-sm">Informações dispersas em sistemas isolados que não se
+            comunicam, impossibilitando uma visão real do território e da população.</p>
         </div>
 
         <div class="card reveal reveal-delay-1 bg-laila-cream rounded-2xl p-8 border border-laila-warm-light">
           <div class="w-12 h-12 bg-laila-blue/10 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-laila-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
           </div>
           <h3 class="text-xl font-bold text-gray-900 mb-3">Populações invisíveis</h3>
-          <p class="text-gray-500 leading-relaxed text-sm">Grupos vulneráveis — pessoas em situação de drogas, mulheres em risco, PCDs — que não aparecem nos indicadores tradicionais.</p>
+          <p class="text-gray-500 leading-relaxed text-sm">Grupos vulneráveis — pessoas em situação de drogas, mulheres
+            em risco, PCDs e etc — que não aparecem nos indicadores tradicionais.</p>
         </div>
 
         <div class="card reveal reveal-delay-2 bg-laila-cream rounded-2xl p-8 border border-laila-warm-light">
           <div class="w-12 h-12 bg-laila-red/10 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-laila-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <h3 class="text-xl font-bold text-gray-900 mb-3">Decisões sem evidência</h3>
-          <p class="text-gray-500 leading-relaxed text-sm">Políticas construídas sem base de dados adequada, gerando desperdício de recursos e baixa efetividade social onde mais importa.</p>
+          <p class="text-gray-500 leading-relaxed text-sm">Políticas construídas sem base de dados adequada, gerando
+            desperdício de recursos e baixa efetividade social onde mais importa.</p>
         </div>
       </div>
     </div>
@@ -547,7 +668,7 @@
       <div class="text-center mb-16">
         <div class="text-laila-blue-light font-bold text-xs uppercase tracking-[0.2em] mb-4 reveal">Nossa Solução</div>
         <h2 class="text-4xl lg:text-5xl font-black text-white leading-tight mb-6 reveal">
-          Transformando dados<br/>em <span class="text-laila-blue-light">caminhos</span>.
+          Transformando dados<br />em <span class="text-laila-blue-light">caminhos</span>.
         </h2>
         <p class="text-lg text-laila-red-pale max-w-2xl mx-auto leading-relaxed reveal">
           Com trilhas digitais inteligentes, revelamos o que antes não era visto —
@@ -560,41 +681,48 @@
         <div class="card reveal bg-white/10 backdrop-blur-sm rounded-2xl p-7 border border-white/15">
           <div class="w-12 h-12 bg-laila-blue rounded-xl flex items-center justify-center mb-5">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
             </svg>
           </div>
           <h3 class="text-base font-bold text-white mb-2">Mapeamento Territorial</h3>
-          <p class="text-laila-red-pale text-sm leading-relaxed">Visualização de dados sociais por território, revelando padrões invisíveis de vulnerabilidade.</p>
+          <p class="text-laila-red-pale text-sm leading-relaxed">Visualização de dados sociais por território, revelando
+            padrões invisíveis de vulnerabilidade.</p>
         </div>
 
         <div class="card reveal reveal-delay-1 bg-white/10 backdrop-blur-sm rounded-2xl p-7 border border-white/15">
           <div class="w-12 h-12 bg-laila-blue rounded-xl flex items-center justify-center mb-5">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
           <h3 class="text-base font-bold text-white mb-2">Trilhas Digitais</h3>
-          <p class="text-laila-red-pale text-sm leading-relaxed">Rastreamento inteligente de trajetórias populacionais para identificar pontos críticos de intervenção.</p>
+          <p class="text-laila-red-pale text-sm leading-relaxed">Rastreamento inteligente de trajetórias populacionais
+            para identificar pontos críticos de intervenção.</p>
         </div>
 
         <div class="card reveal reveal-delay-2 bg-white/10 backdrop-blur-sm rounded-2xl p-7 border border-white/15">
           <div class="w-12 h-12 bg-laila-blue rounded-xl flex items-center justify-center mb-5">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
           </div>
           <h3 class="text-base font-bold text-white mb-2">Dashboards para Gestores</h3>
-          <p class="text-laila-red-pale text-sm leading-relaxed">Painéis que transformam dados complexos em insights acionáveis para tomadores de decisão pública.</p>
+          <p class="text-laila-red-pale text-sm leading-relaxed">Painéis que transformam dados complexos em insights
+            acionáveis para tomadores de decisão pública.</p>
         </div>
 
         <div class="card reveal reveal-delay-3 bg-white/10 backdrop-blur-sm rounded-2xl p-7 border border-white/15">
           <div class="w-12 h-12 bg-laila-blue rounded-xl flex items-center justify-center mb-5">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
             </svg>
           </div>
           <h3 class="text-base font-bold text-white mb-2">Formação & Impacto</h3>
-          <p class="text-laila-red-pale text-sm leading-relaxed">Capacitação de equipes públicas para interpretar e aplicar dados com empatia e efetividade.</p>
+          <p class="text-laila-red-pale text-sm leading-relaxed">Capacitação de equipes públicas para interpretar e
+            aplicar dados com empatia e efetividade.</p>
         </div>
       </div>
 
@@ -603,7 +731,7 @@
         <p class="text-2xl md:text-3xl font-black text-white leading-tight max-w-3xl mx-auto">
           "Com dados integrados e análises inteligentes, a Laila Tek
           <span class="text-laila-blue-light"> fortalece o planejamento</span> e melhora
-          indicadores municipais."
+          indicadores de políticas públicas."
         </p>
       </div>
     </div>
@@ -617,11 +745,12 @@
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
         <div class="reveal">
-          <div class="text-laila-red font-bold text-xs uppercase tracking-[0.2em] mb-5 border-b-2 border-laila-red inline-block pb-1">
+          <div
+            class="text-laila-red font-bold text-xs uppercase tracking-[0.2em] mb-5 border-b-2 border-laila-red inline-block pb-1">
             Áreas de Atuação
           </div>
           <h2 class="text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-6">
-            Onde a Laila Tek<br/>
+            Onde a Laila Tek<br />
             <span class="text-laila-red">faz a diferença.</span>
           </h2>
           <p class="text-xl text-gray-500 leading-relaxed">
@@ -633,10 +762,10 @@
         <div class="reveal reveal-delay-2 bg-laila-blue rounded-3xl p-10 text-white relative overflow-hidden">
           <div class="absolute bottom-0 right-0 w-44 h-44 opacity-10 translate-x-10 translate-y-10">
             <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-              <circle cx="50" cy="50" r="44" stroke="white" stroke-width="4"/>
-              <circle cx="50" cy="50" r="35" stroke="white" stroke-width="4"/>
-              <circle cx="50" cy="50" r="25" stroke="white" stroke-width="4"/>
-              <circle cx="50" cy="50" r="14" stroke="white" stroke-width="4"/>
+              <circle cx="50" cy="50" r="44" stroke="white" stroke-width="4" />
+              <circle cx="50" cy="50" r="35" stroke="white" stroke-width="4" />
+              <circle cx="50" cy="50" r="25" stroke="white" stroke-width="4" />
+              <circle cx="50" cy="50" r="14" stroke="white" stroke-width="4" />
             </svg>
           </div>
           <p class="text-2xl font-black leading-tight mb-5">
@@ -653,64 +782,94 @@
       <!-- Cards grid -->
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <div class="card reveal group bg-white rounded-2xl p-8 border border-laila-warm-light hover:border-laila-red transition-colors">
-          <div class="w-12 h-12 bg-laila-red/10 group-hover:bg-laila-red rounded-xl flex items-center justify-center mb-6 transition-colors">
-            <svg class="w-6 h-6 text-laila-red group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+        <div
+          class="card reveal group bg-white rounded-2xl p-8 border border-laila-warm-light hover:border-laila-red transition-colors">
+          <div
+            class="w-12 h-12 bg-laila-red/10 group-hover:bg-laila-red rounded-xl flex items-center justify-center mb-6 transition-colors">
+            <svg class="w-6 h-6 text-laila-red group-hover:text-white transition-colors" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
             </svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 mb-3">Saúde Pública</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Otimização de metas e repasses do SUS, fortalecendo a atenção básica com dados precisos sobre vulnerabilidade territorial.</p>
+          <p class="text-gray-500 text-sm leading-relaxed">Otimização de metas e repasses do SUS, fortalecendo a atenção
+            básica com dados precisos sobre vulnerabilidade territorial.</p>
         </div>
 
-        <div class="card reveal reveal-delay-1 group bg-white rounded-2xl p-8 border border-laila-warm-light hover:border-laila-red transition-colors">
-          <div class="w-12 h-12 bg-laila-blue/10 group-hover:bg-laila-blue rounded-xl flex items-center justify-center mb-6 transition-colors">
-            <svg class="w-6 h-6 text-laila-blue group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+        <div
+          class="card reveal reveal-delay-1 group bg-white rounded-2xl p-8 border border-laila-warm-light hover:border-laila-red transition-colors">
+          <div
+            class="w-12 h-12 bg-laila-blue/10 group-hover:bg-laila-blue rounded-xl flex items-center justify-center mb-6 transition-colors">
+            <svg class="w-6 h-6 text-laila-blue group-hover:text-white transition-colors" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
             </svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 mb-3">Políticas de Mulheres</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Mapeamento de vulnerabilidades e trilhas de cuidado para mulheres em situação de violência e risco social.</p>
+          <p class="text-gray-500 text-sm leading-relaxed">Mapeamento de vulnerabilidades e trilhas de cuidado para
+            mulheres em situação de violência e risco social.</p>
         </div>
 
-        <div class="card reveal reveal-delay-2 group bg-white rounded-2xl p-8 border border-laila-warm-light hover:border-laila-red transition-colors">
-          <div class="w-12 h-12 bg-laila-red/10 group-hover:bg-laila-red rounded-xl flex items-center justify-center mb-6 transition-colors">
-            <svg class="w-6 h-6 text-laila-red group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        <div
+          class="card reveal reveal-delay-2 group bg-white rounded-2xl p-8 border border-laila-warm-light hover:border-laila-red transition-colors">
+          <div
+            class="w-12 h-12 bg-laila-red/10 group-hover:bg-laila-red rounded-xl flex items-center justify-center mb-6 transition-colors">
+            <svg class="w-6 h-6 text-laila-red group-hover:text-white transition-colors" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 mb-3">Políticas sobre Drogas</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Abordagem baseada em evidências para territórios com alta incidência, priorizando redução de danos e reinserção social.</p>
+          <p class="text-gray-500 text-sm leading-relaxed">Abordagem baseada em evidências para territórios com alta
+            incidência, priorizando redução de danos e reinserção social.</p>
         </div>
 
-        <div class="card reveal group bg-white rounded-2xl p-8 border border-laila-warm-light hover:border-laila-red transition-colors">
-          <div class="w-12 h-12 bg-laila-blue/10 group-hover:bg-laila-blue rounded-xl flex items-center justify-center mb-6 transition-colors">
-            <svg class="w-6 h-6 text-laila-blue group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+        <div
+          class="card reveal group bg-white rounded-2xl p-8 border border-laila-warm-light hover:border-laila-red transition-colors">
+          <div
+            class="w-12 h-12 bg-laila-blue/10 group-hover:bg-laila-blue rounded-xl flex items-center justify-center mb-6 transition-colors">
+            <svg class="w-6 h-6 text-laila-blue group-hover:text-white transition-colors" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
             </svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 mb-3">Municípios Vulneráveis</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Suporte especializado a prefeituras com poucos recursos técnicos, aumentando capacidade de planejamento e captação de recursos.</p>
+          <p class="text-gray-500 text-sm leading-relaxed">Suporte especializado a prefeituras com poucos recursos
+            técnicos, aumentando capacidade de planejamento e captação de recursos.</p>
         </div>
 
-        <div class="card reveal reveal-delay-1 group bg-white rounded-2xl p-8 border border-laila-warm-light hover:border-laila-red transition-colors">
-          <div class="w-12 h-12 bg-laila-red/10 group-hover:bg-laila-red rounded-xl flex items-center justify-center mb-6 transition-colors">
-            <svg class="w-6 h-6 text-laila-red group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+        <div
+          class="card reveal reveal-delay-1 group bg-white rounded-2xl p-8 border border-laila-warm-light hover:border-laila-red transition-colors">
+          <div
+            class="w-12 h-12 bg-laila-red/10 group-hover:bg-laila-red rounded-xl flex items-center justify-center mb-6 transition-colors">
+            <svg class="w-6 h-6 text-laila-red group-hover:text-white transition-colors" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 mb-3">Proteção Social</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Identificação de pontos críticos de risco para antecipação de intervenções protetoras e preventivas em territórios frágeis.</p>
+          <p class="text-gray-500 text-sm leading-relaxed">Identificação de pontos críticos de risco para antecipação de
+            intervenções protetoras e preventivas em territórios frágeis.</p>
         </div>
 
-        <div class="card reveal reveal-delay-2 group bg-white rounded-2xl p-8 border border-laila-warm-light hover:border-laila-red transition-colors">
-          <div class="w-12 h-12 bg-laila-blue/10 group-hover:bg-laila-blue rounded-xl flex items-center justify-center mb-6 transition-colors">
-            <svg class="w-6 h-6 text-laila-blue group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+        <div
+          class="card reveal reveal-delay-2 group bg-white rounded-2xl p-8 border border-laila-warm-light hover:border-laila-red transition-colors">
+          <div
+            class="w-12 h-12 bg-laila-blue/10 group-hover:bg-laila-blue rounded-xl flex items-center justify-center mb-6 transition-colors">
+            <svg class="w-6 h-6 text-laila-blue group-hover:text-white transition-colors" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
             </svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 mb-3">Educação & Cultura</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Análise de desigualdades no acesso à educação e cultura, apoiando políticas de inclusão e equidade territorial.</p>
+          <p class="text-gray-500 text-sm leading-relaxed">Análise de desigualdades no acesso à educação e cultura,
+            apoiando políticas de inclusão e equidade territorial.</p>
         </div>
       </div>
     </div>
@@ -732,42 +891,52 @@
       <div class="grid md:grid-cols-2 gap-6">
 
         <div class="card reveal flex gap-6 p-8 rounded-2xl bg-laila-cream border border-laila-warm-light">
-          <div class="flex-shrink-0 w-14 h-14 bg-laila-red rounded-2xl flex items-center justify-center shadow-md shadow-laila-red/20">
+          <div
+            class="flex-shrink-0 w-14 h-14 bg-laila-red rounded-2xl flex items-center justify-center shadow-md shadow-laila-red/20">
             <span class="text-white text-xl font-black">01</span>
           </div>
           <div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">Tecnologia com humanidade</h3>
-            <p class="text-gray-500 leading-relaxed text-sm">Nossa tecnologia não substitui a empatia — ela a amplifica. Cada algoritmo é calibrado para enxergar o humano por trás do dado.</p>
+            <p class="text-gray-500 leading-relaxed text-sm">Nossa tecnologia não substitui a empatia — ela a amplifica.
+              Cada algoritmo é calibrado para enxergar o humano por trás do dado.</p>
           </div>
         </div>
 
-        <div class="card reveal reveal-delay-1 flex gap-6 p-8 rounded-2xl bg-laila-cream border border-laila-warm-light">
-          <div class="flex-shrink-0 w-14 h-14 bg-laila-blue rounded-2xl flex items-center justify-center shadow-md shadow-laila-blue/20">
+        <div
+          class="card reveal reveal-delay-1 flex gap-6 p-8 rounded-2xl bg-laila-cream border border-laila-warm-light">
+          <div
+            class="flex-shrink-0 w-14 h-14 bg-laila-blue rounded-2xl flex items-center justify-center shadow-md shadow-laila-blue/20">
             <span class="text-white text-xl font-black">02</span>
           </div>
           <div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">Empatia embasada em evidências</h3>
-            <p class="text-gray-500 leading-relaxed text-sm">Não apenas relatórios — são narrativas baseadas em dados que permitem decisões mais justas para populações vulneráveis.</p>
+            <p class="text-gray-500 leading-relaxed text-sm">Não apenas relatórios — são narrativas baseadas em dados
+              que permitem decisões mais justas para populações vulneráveis.</p>
           </div>
         </div>
 
         <div class="card reveal flex gap-6 p-8 rounded-2xl bg-laila-cream border border-laila-warm-light">
-          <div class="flex-shrink-0 w-14 h-14 bg-laila-red rounded-2xl flex items-center justify-center shadow-md shadow-laila-red/20">
+          <div
+            class="flex-shrink-0 w-14 h-14 bg-laila-red rounded-2xl flex items-center justify-center shadow-md shadow-laila-red/20">
             <span class="text-white text-xl font-black">03</span>
           </div>
           <div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">Visibilidade para o invisível</h3>
-            <p class="text-gray-500 leading-relaxed text-sm">Revelamos padrões que sistemas tradicionais ignoram, dando voz e visibilidade a quem mais precisa de políticas efetivas.</p>
+            <p class="text-gray-500 leading-relaxed text-sm">Revelamos padrões que sistemas tradicionais ignoram, dando
+              voz e visibilidade a quem mais precisa de políticas efetivas.</p>
           </div>
         </div>
 
-        <div class="card reveal reveal-delay-1 flex gap-6 p-8 rounded-2xl bg-laila-cream border border-laila-warm-light">
-          <div class="flex-shrink-0 w-14 h-14 bg-laila-blue rounded-2xl flex items-center justify-center shadow-md shadow-laila-blue/20">
+        <div
+          class="card reveal reveal-delay-1 flex gap-6 p-8 rounded-2xl bg-laila-cream border border-laila-warm-light">
+          <div
+            class="flex-shrink-0 w-14 h-14 bg-laila-blue rounded-2xl flex items-center justify-center shadow-md shadow-laila-blue/20">
             <span class="text-white text-xl font-black">04</span>
           </div>
           <div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">Impacto real em políticas públicas</h3>
-            <p class="text-gray-500 leading-relaxed text-sm">Melhoramos indicadores municipais, otimizamos repasses do SUS e fortalecemos o planejamento de gestores que cuidam de milhares de vidas.</p>
+            <p class="text-gray-500 leading-relaxed text-sm">Melhoramos indicadores municipais, otimizamos repasses do
+              SUS e fortalecemos o planejamento de gestores que cuidam de milhares de vidas.</p>
           </div>
         </div>
       </div>
@@ -783,7 +952,7 @@
       <div class="text-center mb-16">
         <div class="text-laila-red font-bold text-xs uppercase tracking-[0.2em] mb-4 reveal">Público-alvo</div>
         <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6 reveal">
-          Construído para quem<br/>
+          Construído para quem<br />
           <span class="text-laila-blue">transforma o Brasil.</span>
         </h2>
         <p class="text-xl text-gray-500 max-w-2xl mx-auto reveal">
@@ -797,63 +966,75 @@
         <div class="card reveal bg-white rounded-2xl p-8 text-center shadow-sm">
           <div class="w-16 h-16 bg-laila-blue/10 rounded-full flex items-center justify-center mx-auto mb-5">
             <svg class="w-8 h-8 text-laila-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
             </svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 mb-2">Gestores Públicos</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Secretários e diretores que precisam de dados confiáveis para planejar e justificar investimentos públicos.</p>
+          <p class="text-gray-500 text-sm leading-relaxed">Secretários e diretores que precisam de dados confiáveis para
+            planejar e justificar investimentos públicos.</p>
         </div>
 
         <div class="card reveal reveal-delay-1 bg-white rounded-2xl p-8 text-center shadow-sm">
           <div class="w-16 h-16 bg-laila-red/10 rounded-full flex items-center justify-center mx-auto mb-5">
             <svg class="w-8 h-8 text-laila-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
             </svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 mb-2">Secretarias de Saúde</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Equipes que gerenciam indicadores do SUS e precisam maximizar repasses e atingir metas de atenção básica.</p>
+          <p class="text-gray-500 text-sm leading-relaxed">Equipes que gerenciam indicadores do SUS e precisam maximizar
+            repasses e atingir metas de atenção básica.</p>
         </div>
 
         <div class="card reveal reveal-delay-2 bg-white rounded-2xl p-8 text-center shadow-sm">
           <div class="w-16 h-16 bg-laila-blue/10 rounded-full flex items-center justify-center mx-auto mb-5">
             <svg class="w-8 h-8 text-laila-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 mb-2">Equipes de Atenção Básica</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Profissionais de saúde e assistência social que trabalham diretamente com populações vulneráveis.</p>
+          <p class="text-gray-500 text-sm leading-relaxed">Profissionais de saúde e assistência social que trabalham
+            diretamente com populações vulneráveis.</p>
         </div>
 
         <div class="card reveal bg-white rounded-2xl p-8 text-center shadow-sm">
           <div class="w-16 h-16 bg-laila-red/10 rounded-full flex items-center justify-center mx-auto mb-5">
             <svg class="w-8 h-8 text-laila-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 mb-2">Municípios Vulneráveis</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Prefeituras com limitações técnicas que precisam de apoio especializado para cumprir metas e captar recursos.</p>
+          <p class="text-gray-500 text-sm leading-relaxed">Prefeituras com limitações técnicas que precisam de apoio
+            especializado para cumprir metas e captar recursos.</p>
         </div>
 
         <div class="card reveal reveal-delay-1 bg-white rounded-2xl p-8 text-center shadow-sm">
           <div class="w-16 h-16 bg-laila-blue/10 rounded-full flex items-center justify-center mx-auto mb-5">
             <svg class="w-8 h-8 text-laila-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
             </svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 mb-2">Organizações de Impacto</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">ONGs, fundações e coletivos que precisam de evidências para captar recursos e demonstrar resultados sociais.</p>
+          <p class="text-gray-500 text-sm leading-relaxed">ONGs, fundações e coletivos que precisam de evidências para
+            captar recursos e demonstrar resultados sociais.</p>
         </div>
 
         <!-- CTA card -->
         <div class="card reveal reveal-delay-2 bg-laila-red rounded-2xl p-8 text-center shadow-lg shadow-laila-red/20">
           <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-5">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
           <h3 class="text-lg font-bold text-white mb-2">Você se encaixa aqui?</h3>
-          <p class="text-laila-red-pale text-sm leading-relaxed mb-5">Descubra como podemos transformar seus dados em impacto real e mensurável.</p>
-          <a href="#contato" class="inline-block bg-white text-laila-red text-sm font-bold px-6 py-2.5 rounded-full hover:bg-laila-cream transition-colors">
+          <p class="text-laila-red-pale text-sm leading-relaxed mb-5">Descubra como podemos transformar seus dados em
+            impacto real e mensurável.</p>
+          <a href="#contato"
+            class="inline-block bg-white text-laila-red text-sm font-bold px-6 py-2.5 rounded-full hover:bg-laila-cream transition-colors">
             Fale conosco →
           </a>
         </div>
@@ -867,19 +1048,20 @@
   ════════════════════════════════════════════ -->
   <section class="py-28 bg-laila-blue relative overflow-hidden">
     <div class="absolute inset-0 pointer-events-none opacity-10">
-      <svg class="w-full h-full" viewBox="0 0 1440 500" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="720" cy="250" r="450" stroke="white" stroke-width="2"/>
-        <circle cx="720" cy="250" r="380" stroke="white" stroke-width="2"/>
-        <circle cx="720" cy="250" r="310" stroke="white" stroke-width="2"/>
-        <circle cx="720" cy="250" r="240" stroke="white" stroke-width="2"/>
-        <circle cx="720" cy="250" r="170" stroke="white" stroke-width="2"/>
-        <circle cx="720" cy="250" r="100" stroke="white" stroke-width="2"/>
+      <svg class="w-full h-full" viewBox="0 0 1440 500" preserveAspectRatio="xMidYMid slice" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="720" cy="250" r="450" stroke="white" stroke-width="2" />
+        <circle cx="720" cy="250" r="380" stroke="white" stroke-width="2" />
+        <circle cx="720" cy="250" r="310" stroke="white" stroke-width="2" />
+        <circle cx="720" cy="250" r="240" stroke="white" stroke-width="2" />
+        <circle cx="720" cy="250" r="170" stroke="white" stroke-width="2" />
+        <circle cx="720" cy="250" r="100" stroke="white" stroke-width="2" />
       </svg>
     </div>
 
     <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
       <h2 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-6 reveal">
-        Cuidado, visibilidade<br/>
+        Cuidado, visibilidade<br />
         <span class="text-laila-blue-light">&amp; humanidade.</span>
       </h2>
       <p class="text-lg text-laila-blue-pale leading-relaxed max-w-2xl mx-auto reveal">
@@ -899,12 +1081,13 @@
 
         <!-- Left: info -->
         <div class="reveal">
-          <div class="text-laila-red font-bold text-xs uppercase tracking-[0.2em] mb-5 border-b-2 border-laila-red inline-block pb-1">
+          <div
+            class="text-laila-red font-bold text-xs uppercase tracking-[0.2em] mb-5 border-b-2 border-laila-red inline-block pb-1">
             Contato
           </div>
           <h2 class="text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-6">
-            Vamos transformar<br/>
-            dados em <span class="text-laila-red">impacto</span><br/>
+            Vamos transformar<br />
+            dados em <span class="text-laila-red">impacto</span><br />
             juntos?
           </h2>
           <p class="text-xl text-gray-500 leading-relaxed mb-10">
@@ -916,7 +1099,8 @@
             <div class="flex items-center gap-4">
               <div class="w-10 h-10 bg-laila-red/10 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg class="w-5 h-5 text-laila-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
               <span class="text-gray-700 font-medium">projetolaila@gmail.com</span>
@@ -924,8 +1108,10 @@
             <div class="flex items-center gap-4">
               <div class="w-10 h-10 bg-laila-blue/10 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg class="w-5 h-5 text-laila-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
               <span class="text-gray-700 font-medium">Brasil · Atuação Nacional</span>
@@ -937,10 +1123,14 @@
             <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Candidata ao programa</p>
             <div class="flex items-center gap-3">
               <div class="flex gap-0.5">
-                <span class="w-5 h-5 rounded-full bg-[#4285F4] flex items-center justify-center text-white text-[9px] font-black">G</span>
-                <span class="w-5 h-5 rounded-full bg-[#EA4335] flex items-center justify-center text-white text-[9px] font-black">o</span>
-                <span class="w-5 h-5 rounded-full bg-[#FBBC05] flex items-center justify-center text-white text-[9px] font-black">o</span>
-                <span class="w-5 h-5 rounded-full bg-[#34A853] flex items-center justify-center text-white text-[9px] font-black">g</span>
+                <span
+                  class="w-5 h-5 rounded-full bg-[#4285F4] flex items-center justify-center text-white text-[9px] font-black">G</span>
+                <span
+                  class="w-5 h-5 rounded-full bg-[#EA4335] flex items-center justify-center text-white text-[9px] font-black">o</span>
+                <span
+                  class="w-5 h-5 rounded-full bg-[#FBBC05] flex items-center justify-center text-white text-[9px] font-black">o</span>
+                <span
+                  class="w-5 h-5 rounded-full bg-[#34A853] flex items-center justify-center text-white text-[9px] font-black">g</span>
               </div>
               <span class="font-bold text-gray-800 text-sm">Google for Startups</span>
             </div>
@@ -955,17 +1145,17 @@
             <div class="grid sm:grid-cols-2 gap-5">
               <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-2">Nome *</label>
-                <input type="text" required placeholder="Seu nome completo" class="form-input"/>
+                <input type="text" required placeholder="Seu nome completo" class="form-input" />
               </div>
               <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-2">Organização *</label>
-                <input type="text" required placeholder="Secretaria, Prefeitura, ONG..." class="form-input"/>
+                <input type="text" required placeholder="Secretaria, Prefeitura, ONG..." class="form-input" />
               </div>
             </div>
 
             <div>
               <label class="block text-sm font-semibold text-gray-700 mb-2">E-mail *</label>
-              <input type="email" required placeholder="seu@email.com.br" class="form-input"/>
+              <input type="email" required placeholder="seu@email.com.br" class="form-input" />
             </div>
 
             <div>
@@ -984,7 +1174,8 @@
 
             <div>
               <label class="block text-sm font-semibold text-gray-700 mb-2">Mensagem</label>
-              <textarea rows="4" placeholder="Conte-nos sobre seu desafio ou como podemos ajudar..." class="form-input" style="resize:none;"></textarea>
+              <textarea rows="4" placeholder="Conte-nos sobre seu desafio ou como podemos ajudar..." class="form-input"
+                style="resize:none;"></textarea>
             </div>
 
             <button id="submit-btn" type="submit"
@@ -993,7 +1184,8 @@
               Enviar mensagem →
             </button>
 
-            <p id="form-success" class="hidden text-center text-green-700 font-semibold text-sm bg-green-50 border border-green-200 rounded-xl py-3 px-4">
+            <p id="form-success"
+              class="hidden text-center text-green-700 font-semibold text-sm bg-green-50 border border-green-200 rounded-xl py-3 px-4">
               ✓ Mensagem enviada! Entraremos em contato em breve.
             </p>
           </form>
@@ -1013,10 +1205,13 @@
         <!-- Brand col -->
         <div class="md:col-span-2">
           <div class="flex items-center gap-3 mb-5">
-            <svg class="w-9 h-9 text-laila-blue-mid" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="3"/>
-              <path d="M50 14C67 14 80 27 80 50C80 65 73 77 62 83M38 83C27 77 20 65 20 50C20 27 33 14 50 14" stroke="currentColor" stroke-width="3"/>
-              <path d="M50 22C63 22 72 33 72 50C72 62 66 72 57 76M43 76C34 72 28 62 28 50C28 33 37 22 50 22" stroke="currentColor" stroke-width="3"/>
+            <svg class="w-9 h-9 text-laila-blue-mid" viewBox="0 0 100 100" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="3" />
+              <path d="M50 14C67 14 80 27 80 50C80 65 73 77 62 83M38 83C27 77 20 65 20 50C20 27 33 14 50 14"
+                stroke="currentColor" stroke-width="3" />
+              <path d="M50 22C63 22 72 33 72 50C72 62 66 72 57 76M43 76C34 72 28 62 28 50C28 33 37 22 50 22"
+                stroke="currentColor" stroke-width="3" />
             </svg>
             <span class="logo-script text-3xl font-bold" style="color:#cba9a6;">Laila Tek</span>
           </div>
@@ -1032,11 +1227,14 @@
         <div>
           <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-5">Navegação</h4>
           <ul class="space-y-3">
-            <li><a href="#sobre"    class="text-gray-400 hover:text-white text-sm transition-colors">Nossa história</a></li>
+            <li><a href="#sobre" class="text-gray-400 hover:text-white text-sm transition-colors">Nossa história</a>
+            </li>
             <li><a href="#solucoes" class="text-gray-400 hover:text-white text-sm transition-colors">Soluções</a></li>
-            <li><a href="#impacto"  class="text-gray-400 hover:text-white text-sm transition-colors">Áreas de impacto</a></li>
-            <li><a href="#publico"  class="text-gray-400 hover:text-white text-sm transition-colors">Público-alvo</a></li>
-            <li><a href="#contato"  class="text-gray-400 hover:text-white text-sm transition-colors">Contato</a></li>
+            <li><a href="#impacto" class="text-gray-400 hover:text-white text-sm transition-colors">Áreas de impacto</a>
+            </li>
+            <li><a href="#publico" class="text-gray-400 hover:text-white text-sm transition-colors">Público-alvo</a>
+            </li>
+            <li><a href="#contato" class="text-gray-400 hover:text-white text-sm transition-colors">Contato</a></li>
           </ul>
         </div>
 
@@ -1070,7 +1268,7 @@
   ════════════════════════════════════════════ -->
   <script>
     // ── Mobile menu ──
-    const menuBtn  = document.getElementById('menu-btn');
+    const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
     mobileMenu.querySelectorAll('a').forEach(a => {
@@ -1090,7 +1288,7 @@
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
     // ── Contact form ──
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
       e.preventDefault();
       const btn = document.getElementById('submit-btn');
       const success = document.getElementById('form-success');
@@ -1112,4 +1310,5 @@
     });
   </script>
 </body>
+
 </html>
